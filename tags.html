@@ -1,16 +1,25 @@
-<html>
+<html lang="en"></html>
   <head>
     <title>HTML Tags</title>
     <meta charset="utf-8">
   </head>
   <body>
 
+    <div style="text-align: right;">
+      <a href="index.html" style="text-decoration: none; color:black">Home</a>
+      <a href="tags.html" style="margin-left: 10px; text-decoration: none; color:black">HTML Tags</a>
+      <a href="moby_dick.html" style="margin-left: 10px; text-decoration: none; color:black">Moby Dick</a>
+    </div>
+
+    <header>
     <h1>Important HTML tags</h1>
+    </header>
 
     <a href="https://www.flickr.com/photos/jdhancock/3814523970">
         <img src="images/storm_trooper_tagged.jpg" alt="Tagged Storm Trooper">
     </a>
 
+    <div>
     <p>
       This page is designed as a quick reference for some of the common tags
       covered in <a href="https://learnenough.com/html"><em>Learn
@@ -23,7 +32,9 @@
       The tables below don't include all HTML tags, but they do list many of
       the most important ones.
     </p>
+    </div>
 
+    <div>
     <h2>Block Elements</h2>
 
     <table>
@@ -33,8 +44,8 @@
         <th>Purpose</th>
       </tr>
       <tr>
-          <td><code>h1</code>&ndash;<code>h6</code></td>
-          <td>headings</td>
+          <td style="padding: 10px;"><code>h1</code>&ndash;<code>h6</code></td>
+          <td style="padding: 10px;"></td>headings</td>
           <td>include a heading (levels 1&ndash;6)</td>
       </tr>
       <tr>
@@ -62,6 +73,16 @@
         <td>table data</td>
         <td>include a table data cell</td>
       </tr>
+      <tr>
+        <td><code>ol</code></td>
+        <td>ordered list</td>
+        <td>create an ordered / numbered list</td>
+      </tr>
+      <tr>
+        <td><code>ul</code></td>
+        <td>unordered list</td>
+        <td>create an unordered / bullet list</td>
+      </tr>
     </table>
 
     <h2>Inline Elements</h2>
@@ -81,7 +102,119 @@
         <td><code>&lt;em&gt;technical sophistication&lt;/em&gt;</code></td>
         <td><em>technical sophistication</em></td>
       </tr>
+      <tr>
+        <td><code>strong</code></td>
+        <td>strong</td>
+        <td>make strong text</td>
+        <td>
+          <code>&lt;strong&gt;at least a billion people&lt;/strong&gt;</code>
+        </td>
+        <td><strong>at least a billion people</strong></td>
+      </tr>
+      <tr>
+        <td><code>a</code></td>
+        <td>anchor</td>
+        <td>make hyperlink</td>
+        <td>
+          <code>
+            &lt;a href="https://learnenough.com/"&gt;Learn Enough&lt;/a&gt;
+          </code>
+        </td>
+        <td> <a href="https://learnenough.com/">Learn Enough</a> </td>
+      </tr>
+      <tr>
+        <td><code>img</code></td>
+        <td>image</td>
+        <td>include an image</td>
+        <td>
+          <code>
+            &lt;img src="https://bit.ly/1MZAFuQ" alt="Michael Hartl"&gt;
+          </code>
+        </td>
+        <td> <img src="https://bit.ly/1MZAFuQ" alt="Michael Hartl">	 </td>
+      </tr>
+      <tr>
+        <td><code>code</code></td>
+        <td>code</td>
+        <td>display code text</td>
+        <td>
+          <code>
+            &lt;code&gt;some code here &lt;/code&gt
+          </code>
+        </td>
+        <td> <code>some code here </code> </td>
+      </tr>
+      <tr>
+        <td><code>li</code></td>
+        <td>list item</td>
+        <td>add an entry to a list</td>
+        <td>&lt;li&gt;list item here&lt;/li&gt</td>
+        <td><li>list item here</li></td>
+      </tr>
     </table>
+
+    <h2>Document Tags</h2>
+
+    <table>
+      <tr>
+        <th>Tag</th>
+        <th>Name</th>
+        <th>Purpose</th>
+        <th>Example</th>
+        <th>Result</th>
+      </tr>
+      <tr>
+        <td><code>html</code></td>
+        <td>html</td>
+        <td>start the html document</td>
+        <td><code>&lt;html&gt;technical sophistication&lt;/html&gt;</code></td>
+        <td>...</td>
+      </tr>
+      <tr>
+        <td><code>head</code></td>
+        <td>head</td>
+        <td>head of the HTML document</td>
+        <td>
+          <code>&lt;head&gt;at least a billion people&lt;/head&gt;</code>
+        </td>
+        <td><code>head</code></td>
+      </tr>
+      <tr>
+        <td><code>body</code></td>
+        <td>body</td>
+        <td>body of the doc</td>
+        <td>
+          <code>
+            &lt;a href="https://learnenough.com/"&gt;Learn Enough&lt;/a&gt;
+          </code>
+        </td>
+        <td> <a href="https://learnenough.com/">Learn Enough</a> </td>
+      </tr>
+      <tr>
+        <td><code>title</code></td>
+        <td>title</td>
+        <td>title of the doc</td>
+        <td>
+          <code>
+            &lt;img src="https://bit.ly/1MZAFuQ" alt="Michael Hartl"&gt;
+          </code>
+        </td>
+        <td> <img src="https://bit.ly/1MZAFuQ" alt="Michael Hartl">	 </td>
+      </tr>
+      <tr>
+        <td><code>meta</code></td>
+        <td>meta</td>
+        <td>meta data for the doc</td>
+        <td>
+          <code>
+            &lt;meta&gt;some code here &lt;/meta&gt
+          </code>
+        </td>
+        <td> <code>some code here </code> </td>
+      </tr>
+    </table>
+
+    </div>
 
   </body>
 </html>
